@@ -1,0 +1,38 @@
+/* Table Container */
+.data-table-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5; /* Default table background color */
+}
+
+/* Table Header */
+.table-header {
+  background-color: #1e293b; /* Header background color */
+  color: #ffffff; /* Header text color */
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Table Cells */
+.table-cell {
+  background-color: #ffffff; /* Row background color */
+  color: #1e293b; /* Row text color */
+  padding: 8px 12px;
+  font-size: 14px;
+  text-align: center; /* Center-align text horizontally */
+  vertical-align: middle; /* Center-align text vertically */
+}
+
+/* Alternate Row Styling */
+.table-cell:nth-of-type(odd) {
+  background-color: #f8f9fa; /* Alternate row background color */
+}
+
+/* Sorted Column Highlight */
+.sorted-column {
+  color: #0e1a4e; /* Text color for sorted column */
+  font-weight: bold;
+}

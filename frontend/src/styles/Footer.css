@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e293b; /* Dark background */
+    color: #ffffff; /* Light text */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .footer-left,
+  .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-link {
+    color: #3b82f6; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .footer-text {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .footer-icon {
+    font-size: 20px; /* Adjust icon size */
+  }
+  

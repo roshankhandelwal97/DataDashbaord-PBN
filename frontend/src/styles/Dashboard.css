@@ -1,0 +1,106 @@
+/* Dashboard Styles */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background: linear-gradient(to right, #0e1a4e, #183168); /* Gradient background */
+    color: #ffffff; /* Light text for contrast */
+    font-family: 'Roboto', sans-serif;
+    overflow: auto; /* Ensure scrolling if content overflows */
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    margin-bottom: 40px; /* Increase spacing for separation */
+    color: #1f2937; /* A professional dark gray color */
+    font-weight: bold;
+    position: relative;
+    font-size: 2rem;
+    padding-bottom: 50px; /* Space for underline */
+    background: linear-gradient(to right, #0e1a4e, #183168); /* Gradient background */
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.dashboard-title:hover {
+    background-position: 0%; /* Animation for hover effect */
+}
+
+.dashboard-title::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 4px;
+    background-color: #1c1f1c; /* Subtle green underline */
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+button {
+    background-color: #3b82f6; /* Blue button color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* Filter Panel */
+.filters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    flex-wrap: wrap;
+    gap: 15px;
+    background: linear-gradient(to right, #0e1a4e, #183168); /* Gradient background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-field {
+    background-color: #2c547b; /* Lighter background for inputs */
+    border-radius: 4px;
+}
+
+.filter-actions button {
+    margin-top: 10px;
+}
+  
+  /* Charts */
+  .charts-container {
+    margin-top: 30px;
+  }
+  
+  .chart-paper {
+    padding: 20px;
+    height: 100%;
+    max-height: 400px;
+    background-color: #1e293b; /* Darker background for charts */
+    color: #ffffff; /* Light text for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #555;
+  }
+  
+  /* Filters Styles */
+  .filters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+  
